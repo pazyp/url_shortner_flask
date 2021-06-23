@@ -1,14 +1,20 @@
 import sqlite3
+import os
 from hashids import Hashids
 from flask import Flask, render_template, request, flash, redirect, url_for
+import os
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row
     return conn
 
+
+
 app = Flask(__name__)
-app.config['SECRECT_KEY'] = 'Vz620Ir70fxjaHQXGTNLA'
+
+secret = os.urandom(12).hex()
+app.config['SECRECT_KEY'] = secret
 
 hashids = Hashids(min_length=8, salt=app.config['SECRECT_KEY'])
 

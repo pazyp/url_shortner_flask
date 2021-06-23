@@ -1,0 +1,96 @@
+body {
+  background: #f5a623;
+  margin-top: 50px;
+  margin-left: 100px;
+  }
+
+.url-box {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      width: 1000px;
+      padding: 60px;
+      transform: translate(-50%, -50%);
+      background: #c5841c;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+    }
+
+.url-box .url-box-input {
+  position: relative
+}
+
+.url-box-input input {
+  font-family: Verdana, Geneva, sans-serif;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+}
+
+.url-box button {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #0c680f; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 112%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.url-box .url-result {
+font-family: Verdana, Geneva, sans-serif;
+margin: 0 0 30px;
+padding: 0;
+color: #000000;
+font-weight: bold;
+font-size: 25px;
+text-align: center;
+top: 130%;
+left: 0%;
+position: absolute;
+width: 100%;
+height: 50px;
+bottom: 10;
+}
+
+::-webkit-input-placeholder {
+font-family: Verdana, Geneva, sans-serif;
+color: rgb(0, 0, 0);
+font-weight: 800;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+font-family: Verdana, Geneva, sans-serif;
+color: rgb(0, 0, 0);  
+font-weight: 800;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+font-family: Verdana, Geneva, sans-serif;
+color: rgb(0, 0, 0);  
+font-weight: 800;
+}
+
+:-ms-input-placeholder {  
+font-family: Verdana, Geneva, sans-serif;
+color: rgb(0, 0, 0);  
+font-weight: 800;
+}
